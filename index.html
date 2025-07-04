@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Front-End Development Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="welcome-screen">
+    <h1>Front-End Development Quiz</h1>
+    <p>
+      This quiz has 25 questions on HTML, CSS, and JavaScript. You’ll get 30 seconds per question. Each correct answer gives you 2 marks. Let’s see how much you know!
+    </p>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <header style="display: none;">
+    <img src="assets/logo.png" alt="Logo" />
+    <h1>Front End Development Quiz</h1>
+  </header>
+
+  <div id="quiz" style="display: none;">
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+      <div id="progress-text">0%</div>
+    </div>
+    <div class="question" id="question" aria-live="assertive">Loading...</div>
+    <div id="options"></div>
+    <div id="result" aria-live="assertive"></div>
+  </div>
+
+  <footer>© 2025 Muhammad Hasan Tahir. All rights reserved.</footer>
+
+  <div id="timer-box" style="display: none;" aria-live="polite">Time Left: <span id="timer">30</span>s</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
